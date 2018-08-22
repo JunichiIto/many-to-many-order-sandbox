@@ -15,6 +15,7 @@ class BookTest < ActiveSupport::TestCase
       [john, richard, ralph, eric],
       book.authors.order(:id)
     )
+    # 発行されるSQLを確認する
     puts book.authors.order(:id).to_sql
     # SELECT "authors".*
     # FROM "authors"
@@ -28,6 +29,7 @@ class BookTest < ActiveSupport::TestCase
       [eric, ralph, richard, john],
       book.authors.order('book_authors.id')
     )
+    # 発行されるSQLを確認する
     puts book.authors.order('book_authors.id').to_sql
     # SELECT "authors".*
     # FROM "authors"
