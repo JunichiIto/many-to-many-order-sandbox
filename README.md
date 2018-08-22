@@ -1,24 +1,14 @@
-# README
+# many-to-many-order-sandbox
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Sample app for testing many-to-many order
 
-Things you may want to cover:
+## How to test 
 
-* Ruby version
+``` 
+bundle install
+rails test
+```
 
-* System dependencies
+## License
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+MIT License.
